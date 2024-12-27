@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set root and body to fill the viewport */
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Oswald', sans-serif; /* Global font family */
+  line-height: 1.5;
+  color: #333;
+  background-color: #1a1717;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.fullscreen {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Add margin to text elements */
+h1, h2, h3, p {
+  margin-bottom: 1rem; /* Adds space after each text element */
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Global Styles for Sections */
+.hero-section,
+.carousel-container,
+.blank-section {
+  width: 100%; /* Ensure full width for these sections */
+}
+
+/* Global Styling for Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Global Styling for Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Prevent horizontal scrolling */
+body {
+  overflow-x: hidden;
+}
+
+/* Smooth transitions for hover and active states */
+a, button {
+  transition: all 0.3s ease;
+}

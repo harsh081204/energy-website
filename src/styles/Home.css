@@ -1,0 +1,18 @@
+/* Home Container */
+.home {
+  display: flex;
+  flex-direction: column; /* Stack components vertically */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Disable scrolling */
+  background-color: black; /* Background color */
+}
+
+/* Hero Section */
+.hero-section {
+  flex: 0 0 95%; /* Take up 85% of the viewport */
+}
+
+/* Footer Section */
+.footer {
+  flex: 0 0 5%; /* Take up 15% of the viewport */
+}

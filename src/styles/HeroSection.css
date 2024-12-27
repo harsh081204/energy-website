@@ -1,0 +1,148 @@
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ensure it takes full viewport height */
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+  
+  .carousel-image.active {
+    opacity: 1;
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    position: absolute;
+    top: 35%; /* Move 50% down the viewport */
+    left: 10%; /* Adjust horizontal position */
+    transform: translateY(-50%); /* Center by offsetting 50% upward */
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    opacity: 0; /* Hidden initially for animation */
+    animation: fadeInUp 1.5s ease-out forwards; /* Animation */
+  }
+  
+  /* Animation for Hero Text */
+  .hero-content h2,
+  .hero-content h1,
+  .hero-content p {
+    opacity: 0;
+    transform: translateY(50px); /* Start slightly below */
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  
+  /* Welcome Text Animation */
+  .hero-content h2 {
+    animation-delay: 0.3s; /* Delay for a staggered effect */
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+  
+  /* Energy Club Heading Animation */
+  .hero-content h1 {
+    animation-delay: 0.6s; /* Delayed slightly longer */
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Paragraph Animation */
+  .hero-content p {
+    animation-delay: 0.9s; /* Delayed longest */
+    font-size: 1.2rem;
+    max-width: 400px;
+    line-height: 1.6;
+  }
+  
+  /* Keyframes for Fade-in Up */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px); /* Start slightly below */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* End at original position */
+    }
+  }
+  
+  /* Carousel Buttons */
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .carousel-button.prev {
+    left: 20px;
+  }
+  
+  .carousel-button.next {
+    right: 20px;
+  }
+  
+  .carousel-button svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .highlight{
+    color: #fff;
+    font-weight: 700;
+    font-size: 56px;
+    opacity: 90%;
+    text-shadow:
+    /* 0 0 7px #1e8d50, */
+    /* 0 0 10px #1e8d50, */
+    /* 0 0 21px #1e8d50, */
+    /* 0 0 42px #0fa, */
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+  }
+
+  
